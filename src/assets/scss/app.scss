@@ -1,9 +1,14 @@
 @charset 'utf-8';
 
+$color-base: #9e9e9e;
+$color-title: #565656;
+$color-link: #5a5a5a;
+$color-link-hover: #3366FF;
+
 html, body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #9e9e9e;
+    color: $color-base;
     margin: 0;
     overflow: hidden;
 }
@@ -11,14 +16,14 @@ html, body {
 a,
 a:link,
 a:visited {
-    color: #5a5a5a;
+    color: $color-link;
     text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #3366FF;
+    color: $color-link-hover;
     text-decoration: underline;
     outline: none;
 }
@@ -44,7 +49,7 @@ a:focus:before {
         text-transform: uppercase;
         font-size: 30px;
         line-height: 1;
-        color: #565656;
+        color: $color-title;
         margin: 0;
         margin-bottom: 25px;
         margin-left: 8px;
