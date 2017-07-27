@@ -4,10 +4,5 @@ window.addEventListener("deviceorientation", function (e) {
   var beta     = event.beta;
   var gamma    = event.gamma;
 
-  console.log(absolute);
-  console.log(alpha);
-  console.log(beta);
-  console.log(gamma);
-
-  element.style.transform = "rotate3d(1, 0, 0, " + gamma + "deg)";
+  document.getElementById("content").style.transform = "rotate3d(1, 0, 0, " + gamma + "deg)";
 }, true);
