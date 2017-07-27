@@ -5,14 +5,23 @@ html, body {
     margin: 0;
     overflow: hidden;
 }
-a {
+a,
+a:link,
+a:visited {
     color: #5a5a5a;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:focus {
     color: #3366FF;
     text-decoration: underline;
+    outline: none;
+}
+
+a:focus:before {
+    content: "\21AA\20";
 }
 
 ul {
