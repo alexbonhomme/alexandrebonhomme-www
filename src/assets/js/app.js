@@ -9,5 +9,5 @@ window.addEventListener("deviceorientation", function (e) {
   debugx.innerHTML = "x: " + x;
   debugy.innerHTML = "y: " + y;
 
-  document.getElementById("content").style.transform = "rotate3d(1, 0, 0, " + (x+90) + "deg)";
+  document.getElementById("content").style.transform = "rotate3d(1, 0, 0, " + (x+90) + "deg) rotate3d(0, 1, 0, " + (y) + "deg)";
 }, true);
