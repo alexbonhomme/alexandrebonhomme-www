@@ -6,5 +6,5 @@ window.addEventListener("deviceorientation", function (e) {
 
   // document.getElementById("content").innerHTML =  "gamma: " + y + "<br />";
 
-  document.getElementById("content").style.transform = "rotate3d(1, 0, 0, " + y + "deg)";
+  document.getElementById("content").style.transform = "rotate3d(1, 0, 0, " + x + "deg)";
 }, true);
