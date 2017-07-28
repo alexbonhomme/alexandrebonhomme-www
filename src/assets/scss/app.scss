@@ -3,7 +3,12 @@
 $color-base: #9e9e9e;
 $color-title: #565656;
 $color-link: #5a5a5a;
-$color-link-hover: #3366FF;
+$color-link-hover: #FF0041;
+
+// #FF0041
+// #00C5FF
+// #FFD100
+// #00CC58
 
 html, body {
     font-family: 'Open Sans', sans-serif;
@@ -40,18 +45,10 @@ a:focus:before {
     text-align: center;
     margin-left: -160px;
     transform: translate3d(0, -50%, 0);
-    -webkit-user-select: none;
-    -moz-user-select: none;
     user-select: none;
 }
 
 .content {
-    // 3D perspective
-    perspective: 800px;
-    transform-style: preserve-3d;
-    // transition: transform 1s;
-    // transform: rotate3d(1, 0, 0, 60deg);
-
     h1 {
         font-family: 'Dosis', sans-serif;
         text-transform: uppercase;
