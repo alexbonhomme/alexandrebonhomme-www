@@ -135,6 +135,7 @@ a:focus:before {
         border: 1px solid $color-title;
         padding: 13px 16px;
         line-height: 1;
+        letter-spacing: .06em;
 
         &:before {
             content: "";
@@ -144,7 +145,7 @@ a:focus:before {
             right: 0;
             top: 100%;
             z-index: -1;
-            transition: 0.08s ease-in;
+            transition: .08s ease-in;
             background: $color-title;
         }
 
@@ -153,7 +154,7 @@ a:focus:before {
         &:focus {
             color: white;
             text-decoration: none;
-            transition: all 0.08s ease-in;
+            transition: all .08s ease-in;
 
             &:before {
                 top: 0;
