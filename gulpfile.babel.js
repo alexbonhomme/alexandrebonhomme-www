@@ -53,7 +53,8 @@ function pages() {
   return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
     .pipe(panini({
       root: 'src/pages/',
-      layouts: 'src/layouts/'
+      layouts: 'src/layouts/',
+      partials: 'src/partials/',
     }))
     .pipe(gulp.dest(PATHS.dist));
 }
@@ -141,7 +142,7 @@ function reload(done) {
 function watch() {
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
-  gulp.watch('src/layouts/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
+   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
