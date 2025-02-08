@@ -23,9 +23,16 @@
   padding: 10px;
 }
 
-.aqelia-container {
-  padding: 30%;
-  background: #1d1d1b;
+.paradigmes-container {
+  padding: 25%;
+  background: #ff6464;
+  color: white;
+}
+
+.paradigmes-container svg,
+.paradigmes-container figure {
+  width: 100%;
+  vertical-align: middle;
 }
 
 .serak-container {
